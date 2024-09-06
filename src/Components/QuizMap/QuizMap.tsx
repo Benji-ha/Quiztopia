@@ -82,3 +82,5 @@ const QuizMap = ({ quizzes, onMapClick }: QuizMapProps) => {
 };
 
 export default QuizMap;
+
+//Hello friend
