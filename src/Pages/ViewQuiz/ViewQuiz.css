@@ -1,0 +1,109 @@
+
+.Quiz-box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 500px;
+    border: solid 1px black;
+    margin: 10px 0px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.13);
+}
+
+.Quiz-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 155px;
+}
+
+
+.View-Button {
+    appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 10px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 0px;
+  min-width: 0;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+  height: 30px;
+  will-change: transform;
+}
+
+.View-Button:disabled {
+  pointer-events: none;
+}
+
+.View-Button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.View-Button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.Back-Button {
+    margin-top: 10px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 0px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #616467;
+    box-shadow: inset 0 0 0 2px #616467;
+    background-color: transparent;
+    height: 48px;
+    :hover{
+        color: #fff;
+        background-color: #616467;
+    }
+
+}
+
+.Back-Button:disabled {
+    pointer-events: none;
+  }
+  
+  .Back-Button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .Back-Button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }

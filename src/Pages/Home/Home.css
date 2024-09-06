@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+}
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.Home-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Signup-Button {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 10px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 0px;
+  min-width: 0;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
+  height: 40px;
+  will-change: transform;
+}
+
+.Signup-Button:disabled {
+  pointer-events: none;
+}
+
+.Signup-Button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.Signup-Button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.Home-header {
+    font-size: 40px;
+    padding-bottom: 100px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, black 0%, black 50%, transparent 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    mask-image: linear-gradient(to bottom, black, transparent);
+    mask-size: 100% 200%;
+    mask-position: top;
+    animation: textGrow 3s ease-out forwards;
+}
+
+@keyframes textGrow {
+    0% {
+        mask-position: top;
+        font-size: 40px;
+    }
+    100% {
+        mask-position: bottom;
+        font-size: 100px;
+    }
+}
